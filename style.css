@@ -9,96 +9,111 @@ html, body {
     width:100%;
 }
 
-body{
+#main{
+    height: 100%;
+    width: 100%;
     background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#card{
-    overflow: hidden;
+
+.card{
+    height: 450px;
     position: relative;
-    height: 400px;
-    width: 300px;
-    background-color: #fff;
+    width: 320px;
     border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
 }
+
 #storiyan{
     height: 100px;
     width: 100%;
+    /* background-color: red; */
+    border-bottom: 1px solid #444;
     padding: 15px;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
 }
-
 #storiyan::-webkit-scrollbar{
-    background-color: rgba(230, 230, 230, 0.442);
-    height: 4px;
+    display: none;
 }
-#storiyan::-webkit-scrollbar-thumb{
-    background-color: rgba(190, 190, 190, 0.638);
-    border-radius: 50px;
-}
+
 
 .story{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background: linear-gradient(to right bottom,red,rgb(255, 136, 0),purple,blue);
-    /* background-color: red; */
-    padding: 3px;
-    margin-right: 4px;
+    background: linear-gradient(to right bottom,rgb(255, 94, 0),rgb(254, 33, 70),rgb(216, 255, 44),rgb(6, 225, 152),rgb(240, 11, 240));
     display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+    transition: all ease 0.2s;
 }
+.story:hover{
+    padding: 4px;
 
+}
 .story img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 50%;
-    object-position: center;
+    object-fit: cover;
 }
+
 #full{
     height: 100%;
     width: 100%;
     position: absolute;
+    display: none;
     background-size: cover;
     background-position: center;
-    display: none;
-    /* background-color: rgb(27, 144, 202); */
-    padding: 10px;
+    padding: 15px;
 }
 
-#full #progress{
+#progress{
+    height: 7px;
+    border-radius: 50px;
     width: 100%;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.509);
-    border-radius: 50px;
+    background-color: rgba(236, 236, 236, 0.658);
 }
-#full #progress #growth{
+#growth{
     height: 100%;
-    width: 50%;
+    width: 0%;
+    background-color: rgba(86, 86, 86, 0.886);
     border-radius: 50px;
-    background-color: white;
 }
 
-#full .userStory{
+.username{
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-top: 10px;
-}
-#full .userStory img{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-}
-
-#full .userStory h5{
+    justify-content: space-between;
+    padding: 10px 0;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.profile .dp{
+    /* background-color: red; */
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 30px;
+    background-size: cover;
+    background-position: top;
+    width: 30px;
+    margin-right: 5px;
+}
+.username h4{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.username .close{
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
 }

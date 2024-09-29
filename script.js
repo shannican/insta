@@ -1,84 +1,87 @@
-var arr = [
+var users = [
   {
-    username: "sweeti kumari",
-    dp: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    username: "Babita kumari",
     story:
-      "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1549570652-97324981a6fd?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "babita kumari",
-    dp: "https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    username: "Lovely Kumari",
     story:
-      "https://images.unsplash.com/photo-1719831400714-5d4fe425cd8a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "lovely kumari",
-    dp: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+    username: "Sweeti kumari",
     story:
-      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1562572159-4efc207f5aff?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1553782376-b2e8256ab838?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "sweeti kumari",
-    dp: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    username: "Babita kumari",
     story:
-      "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1549570652-97324981a6fd?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "babita kumari",
-    dp: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    username: "Lovely Kumari",
     story:
-      "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1574015974293-817f0ebebb74?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "lovely kumari",
-    dp: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+    username: "Sweeti kumari",
     story:
-      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8",
+      "https://images.unsplash.com/photo-1562572159-4efc207f5aff?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    dp: "https://images.unsplash.com/photo-1553782376-b2e8256ab838?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
-var clutter = ""
+var clutter = "";
 
-arr.forEach(function(elem,idx){
+users.forEach(function (elem, idx) {
   clutter += `<div class="story">
-            <img id=${idx} src=${elem.dp} alt="">
-          </div>`
-})
+            <img id=${idx} src="${elem.dp}" alt="">
+          </div>`;
+});
 
-var storiyan = document.querySelector("#storiyan")
-
-
-
-var full = document.querySelector("#full")
-var username = document.querySelector("#full h5")
+var storiyan = document.querySelector("#storiyan");
+var full = document.querySelector("#full");
 var growth = document.querySelector("#growth")
-var userImage = document.querySelector(".userStory img")
+var dp = document.querySelector(".dp")
+var username = document.querySelector("#full h4")
+var close = document.querySelector(".close")
 
+storiyan.innerHTML = clutter;
 
-storiyan.innerHTML = clutter
+var time = 0
 
-storiyan.addEventListener("click",function(dets){
-
-  var grow = 0
-
-  var currentStory =  arr[dets.target.id].story
-
-  full.style.display = "initial"
-  full.style.backgroundImage = `url(${currentStory})`
-  username.innerHTML = arr[dets.target.id].username
-  userImage.setAttribute("src",arr[dets.target.id].dp)
+storiyan.addEventListener("click", function (dets) {
+  var targetObject = users[dets.target.id] 
+  
+  full.style.display = "block"
+  full.style.backgroundImage = `url(${targetObject.story})`
+  dp.style.backgroundImage = `url(${targetObject.dp})`
+  username.innerHTML = targetObject.username
 
 
   var storyInterval = setInterval(function(){
-    grow++
-    growth.style.width = grow + "%"
-    console.log(grow)
-  },40)
+    time++
+    growth.style.width = time+"%"
+    console.log("Hello",time)
+  },30)
 
   setTimeout(function(){
-    full.style.display = "none"
     clearInterval(storyInterval)
-  },4000)
-  
+    time = 0
+    full.style.display = "none"
+  },3000)
 
-})
+  close.addEventListener("click",function(){
+    clearInterval(storyInterval)
+    time = 0
+    full.style.display = "none"
+  })
+
+
+});
